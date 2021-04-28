@@ -5,7 +5,8 @@
     --accent-blue: #2196F3;
     --alt: #494949;
     --kind-bg: #F5F4FA;
-    --border: #ECECEC; 
+    --border: #ECECEC;
+    --social-icons: #AFB1B8;
 
     --first-dark-bg: #2F303A;
     --hero-opacity: rgba(47, 48, 58, 0.4);
@@ -316,6 +317,31 @@ margin-bottom: 10px;
 .stuff{
     padding-top: 30px;
     padding-bottom: 30px;
+}
+.social-icon-item:not(:last-child){
+    margin-right: 10px;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    fill: var(--social-icons);
+}
+.social-icons-svg{
+    width: 20px;
+    height: 20px;
+}
+.social-icons-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--main-title-text);
+}
+.social-icons-link:hover .social-icons-svg,
+.social-icons-link:focus .social-icons-svg {
+    fill: var(--accent-blue);
 }
 .second-section-text{
     font-family: Roboto;
