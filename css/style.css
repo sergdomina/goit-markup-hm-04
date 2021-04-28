@@ -7,6 +7,7 @@
     --kind-bg: #F5F4FA;
     --border: #ECECEC;
     --social-icons: #AFB1B8;
+    --opasity-white: rgba(255, 255, 255, 0.1);
 
     --first-dark-bg: #2F303A;
     --hero-opacity: rgba(47, 48, 58, 0.4);
@@ -57,6 +58,15 @@ body {
     padding-top: 32px;
     padding-bottom: 32px;
     border-bottom: 1px solid #ececec;
+}
+.address-icon{
+    stroke: var(--maint-body-text) ;
+    margin-right: 10px;
+    stroke: currentColor;
+}
+.mailphone-adress{
+    display: flex;
+    align-items: center;
 }
 .menu{
     display: flex;
@@ -250,6 +260,22 @@ body {
 .section2li:not(:last-child){
     margin-right: 30px;
 }
+.advantages-icon-place {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+    width: 270px;
+    height: 120px;
+
+	background-color: var(--kind-bg);
+	filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.20));
+}
+.advantages-description {
+	margin-top: 30px;
+}
+.freak-icon{
+}
 .section3photo{
     display: block;
     max-width: 100%;
@@ -316,7 +342,7 @@ margin-bottom: 10px;
 }
 .stuff{
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 16px;
 }
 .social-icon-item:not(:last-child){
     margin-right: 10px;
@@ -325,10 +351,15 @@ margin-bottom: 10px;
     display: flex;
     justify-content: center;
     fill: var(--social-icons);
+    margin-bottom: 30px;   
 }
 .social-icons-svg{
     width: 20px;
     height: 20px;
+}
+.social-icons-svg:hover,
+.social-icons-svg:focus{
+    fill: var(--main-title-text);
 }
 .social-icons-link{
     display: flex;
@@ -339,9 +370,13 @@ margin-bottom: 10px;
     border-radius: 50%;
     background-color: var(--main-title-text);
 }
-.social-icons-link:hover .social-icons-svg,
-.social-icons-link:focus .social-icons-svg {
-    fill: var(--accent-blue);
+.social-icons-link:hover,
+.social-icons-link:focus {
+    background-color: var(--accent-blue);
+	color: var(--main-title-text);
+	width: 44px;
+	height: 44px;
+	border-radius: 50px;
 }
 .second-section-text{
     font-family: Roboto;
@@ -358,6 +393,20 @@ margin-bottom: 10px;
 .section2{
     padding-top: 94px;
 }
+.client-icon-place {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;	
+}
+.li-client-icon-place:not(:last-child){
+    margin-right: 30px;
+}
 .li-align{
     text-align: center;
 }
@@ -367,12 +416,54 @@ margin-bottom: 10px;
     background-color: var(--first-dark-bg);
     color: var(--main-title-text);   
 }
+.footer-main{
+    display: flex;
+    align-items: baseline;
+}
 .footerflex{
     display: block;
     align-items: baseline;
 }
-.footerlink:not(:last-child){
+.footerlink{
 	margin-right: 70px;
+}
+.call-to-action {
+	display: inline-block;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+
+	margin-top: 0;
+	margin-bottom: 20px;
+
+	text-transform: uppercase;
+	color: var(--main-title-text);
+}
+.footer-icons-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--opasity-white);
+}
+.footer-icons-link:hover,
+.footer-icons-link:focus {
+    background-color: var(--accent-blue);
+	color: var(--main-title-text);
+	width: 44px;
+	height: 44px;
+	border-radius: 50px;
+}
+.footer-icons-svg{
+    width: 20px;
+    height: 20px;
+    color: #FFFFFF;
+}
+.footer-icons-svg:hover,
+.footer-icons-svg:focus{
+    fill: var(--main-title-text);
 }
 .footerlogo{
     display: block;
