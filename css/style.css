@@ -637,9 +637,6 @@ color: var(--accent-blue);
     background-color: #757575;
     align-content: center;
 }
-.portfolio-ticket {
-	overflow: hidden;
-}
 .borderbox{
     padding-left: 24px;
     padding-bottom: 20px;
@@ -656,6 +653,7 @@ color: var(--accent-blue);
         margin-right: 30px;
         margin-bottom: 30px;
         cursor: pointer;
+        display: block;
 }
 .portfolio-ticket:nth-child(3n) {
 	margin-right: 0;
@@ -666,12 +664,10 @@ color: var(--accent-blue);
 .text-left{
     text-align: left;
 }
-/**
 .portfolio-ticket:hover,
 .portfolio-ticket:focus-within {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-**/
 .portfolio-hover:hover,
 .portfolio-hover:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
