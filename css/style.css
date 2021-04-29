@@ -60,10 +60,14 @@ body {
     border-bottom: 1px solid #ececec;
 }
 .address-icon{
-    stroke: var(--maint-body-text) ;
+    fill: var(--social-icons) ;
     margin-right: 10px;
-    stroke: currentColor;
 }
+.address-icon:hover,
+.address-icon:focus{
+    fill: var(--accent-blue);
+}
+
 .mailphone-adress{
     display: flex;
     align-items: center;
@@ -356,6 +360,7 @@ margin-bottom: 10px;
 .social-icons-svg{
     width: 20px;
     height: 20px;
+    fill: var(--social-icons);
 }
 .social-icons-svg:hover,
 .social-icons-svg:focus{
@@ -371,7 +376,7 @@ margin-bottom: 10px;
     background-color: var(--main-title-text);
 }
 .social-icons-link:hover,
-.social-icons-link:focus {
+.social-icons-link:focus{
     background-color: var(--accent-blue);
 	color: var(--main-title-text);
 	width: 44px;
@@ -404,12 +409,25 @@ margin-bottom: 10px;
     box-sizing: border-box;
     border-radius: 4px;	
 }
+.client-icon-place:hover,
+.client-icon-place:focus{
+    border-color: var(--accent-blue);
+}
 .li-client-icon-place:not(:last-child){
     margin-right: 30px;
 }
+.client-svg{
+    fill: var(--social-icons);
+}
+.client-svg:hover,
+.client-svg:focus{
+    fill: var(--accent-blue);
+}
+/*
 .li-align{
     text-align: center;
 }
+**/
 .footer{
     padding-top: 60px;
     padding-bottom: 60px;
@@ -459,7 +477,7 @@ margin-bottom: 10px;
 .footer-icons-svg{
     width: 20px;
     height: 20px;
-    color: #FFFFFF;
+    fill: var(--main-title-text);
 }
 .footer-icons-svg:hover,
 .footer-icons-svg:focus{
@@ -648,9 +666,15 @@ color: var(--accent-blue);
 .text-left{
     text-align: left;
 }
+/**
 .portfolio-ticket:hover,
 .portfolio-ticket:focus-within {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+**/
+.portfolio-hover:hover,
+.portfolio-hover:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .kind{
     font-family: Roboto;
