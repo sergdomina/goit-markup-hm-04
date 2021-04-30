@@ -423,11 +423,7 @@ margin-bottom: 10px;
 .client-svg:focus{
     fill: var(--accent-blue);
 }
-/*
-.li-align{
-    text-align: center;
-}
-**/
+
 .footer{
     padding-top: 60px;
     padding-bottom: 60px;
@@ -653,16 +649,18 @@ color: var(--accent-blue);
     flex-wrap: wrap;
 }
 .portfolio-ticket{
-        margin-right: 30px;
-        margin-bottom: 30px;
-        cursor: pointer;
-        display: block;
+    cursor: pointer;
+    display: block;
 }
 .portfolio-ticket:nth-child(3n) {
-	margin-right: 0;
+	margin-right: 0px;
 }
 .portfolio-ticket:nth-last-child(-n + 3) {
-    margin-bottom: 0;
+    margin-bottom: 0px;
+}
+.li-align{
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 .text-left{
     text-align: left;
