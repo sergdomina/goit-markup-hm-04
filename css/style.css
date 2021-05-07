@@ -401,16 +401,13 @@ margin-bottom: 10px;
 .client-icon-place:hover,
 .client-icon-place:focus{
     border-color: var(--accent-blue);
+    color: var(--accent-blue);
 }
 .li-client-icon-place:not(:last-child){
     margin-right: 30px;
 }
 .client-svg{
-    fill: var(--social-icons);
-}
-.client-svg:hover,
-.client-svg:focus{
-    fill: var(--accent-blue);
+    fill: currentColor;
 }
 
 .footer{
