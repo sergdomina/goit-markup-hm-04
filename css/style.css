@@ -397,6 +397,7 @@ margin-bottom: 10px;
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;	
+    color: var(--social-icons);
 }
 .client-icon-place:hover,
 .client-icon-place:focus{
